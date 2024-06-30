@@ -41,7 +41,7 @@ class GameState():
         self.moveLog.append(move)  # log the move, so we can see history or undo move
         self.whiteToMove = not self.whiteToMove  # swap players
 
-        # keep tracking of king in case of check
+        # keep tracking of king location in case of check
         if move.pieceMoved == "wK":
             self.whiteKingLocation = (move.endRow, move.endCol)
         elif move.pieceMoved == "bK":

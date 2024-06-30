@@ -35,7 +35,7 @@ def main():
     p.display.set_caption("Chess with AI")
     screen = p.display.set_mode((WIDTH, HEIGHT))
     clock = p.time.Clock().tick(60)
-    screen.fill(p.Color("white"))
+    screen.fill(p.Color("#EBECD0"))
 
     gs = ChessEngine.GameState()
 
@@ -115,7 +115,7 @@ Draw the squares on the board. The top left corner is always light.
 
 
 def drawBoard(screen):
-    colors = [p.Color("white"), p.Color("gray")]
+    colors = [p.Color("#EBECD0"), p.Color("#739552")]
     for r in range(DIMENSION):
         for c in range(DIMENSION):
             color = colors[((r + c) % 2)]
