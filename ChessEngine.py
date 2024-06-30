@@ -108,6 +108,7 @@ class GameState():
                 return True
         return False
 
+
     def getAllPossibleMoves(self):
         moves = []
         for r in range(len(self.board)):  # number of rows
